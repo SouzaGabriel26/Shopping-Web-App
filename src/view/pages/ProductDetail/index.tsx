@@ -57,8 +57,8 @@ export default function ProductDetail() {
         <h1 className='font-bold'>Product Detail</h1>
       </header>
 
-      <section className='h-full'>
-        <div className='h-full flex flex-col items-center mt-40'>
+      <section className='h-full mb-10'>
+        <div className='h-full flex flex-col items-center mt-[90px]'>
           <img className='max-w-[200px] mb-8' src={productDetailed.image} alt={productDetailed.title} />
 
           <div className='text-center flex flex-col gap-4 max-w-sm mb-8'>
