@@ -15,7 +15,7 @@ Um projeto feito apenas para fins de aprendizado, utilizando conceitos important
 
 ## Tecnologias de Suporte
 
-- Teact-hot-toast
+- React-hot-toast
 - React icons
 - Tailwind-merge
 - Clsx
