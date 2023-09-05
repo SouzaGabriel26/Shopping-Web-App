@@ -29,8 +29,8 @@ export default function Header() {
 
         <AiOutlineSearch className='absolute top-2.5 right-2'/> 
       </div>
-      <button onClick={toggleIsOpen} className='relative' name='Cart' role='button'>
-        <AiOutlineShoppingCart className='text-2xl hover:scale-110 cursor-pointer'/>
+      <button onClick={toggleIsOpen} className='relative' name='open' role='button'>
+        <AiOutlineShoppingCart className='text-2xl hover:scale-110 cursor-pointer' />
 
         {
           totalAmount > 0 && (

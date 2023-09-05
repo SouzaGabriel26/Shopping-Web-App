@@ -26,7 +26,7 @@ export default function Product({ product }: ProductProps) {
             role='button'
             className='flex justify-center items-center text-white w-10 h-10 bg-red-500 hover:bg-red-400 transition-all'
             onClick={() => addToCart(product)}
-            name='Add-button'
+            name='Add'
           >
             <BsPlus className='text-3xl' />
           </button>
@@ -40,7 +40,7 @@ export default function Product({ product }: ProductProps) {
         <span className='text-gray-500'>{category}</span>
         <Link
           to={`/product/${id}`}
-          aria-label={`Read more about ${name}`}
+          aria-label={title}
         >
           <h2 className='font-semibold mb-1 hover:underline transition-all'>{title}</h2>
         </Link>
