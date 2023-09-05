@@ -5,10 +5,9 @@ import useSidebarContext from '../../app/hooks/useSidebarContext';
 
 interface ProductProps {
   product: ProductsResponse;
-  name: string;
 }
 
-export default function Product({ product, name }: ProductProps) {
+export default function Product({ product }: ProductProps) {
 
   const { id, category, image, price, title } = product;
   const { addToCart } = useSidebarContext();
@@ -27,7 +26,7 @@ export default function Product({ product, name }: ProductProps) {
             role='button'
             className='flex justify-center items-center text-white w-10 h-10 bg-red-500 hover:bg-red-400 transition-all'
             onClick={() => addToCart(product)}
-            name={name}
+            name='Add-button'
           >
             <BsPlus className='text-3xl' />
           </button>
