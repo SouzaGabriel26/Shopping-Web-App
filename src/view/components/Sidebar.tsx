@@ -20,7 +20,7 @@ export default function Sidebar() {
           Bag ({totalAmount})
         </div>
         <div>
-          <button className='text-2xl' onClick={toggleIsOpen} name='closeCartButton' role='button'>
+          <button className='text-2xl' onClick={toggleIsOpen} name='closeCartButton' aria-label='closeCartButton' role='button'>
             <IoMdArrowForward />
           </button>
         </div>
