@@ -29,7 +29,7 @@ export default function Header() {
 
         <AiOutlineSearch className='absolute top-2.5 right-2'/> 
       </div>
-      <button onClick={toggleIsOpen} className='relative' name='open' role='button'>
+      <button onClick={toggleIsOpen} className='relative' name='open' aria-label='Open' role='button'>
         <AiOutlineShoppingCart className='text-2xl hover:scale-110 cursor-pointer' />
 
         {
