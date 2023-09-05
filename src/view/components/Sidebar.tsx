@@ -20,7 +20,7 @@ export default function Sidebar() {
           Bag ({totalAmount})
         </div>
         <div>
-          <button className='text-2xl' onClick={toggleIsOpen}>
+          <button className='text-2xl' onClick={toggleIsOpen} name='closeCartButton' role='button'>
             <IoMdArrowForward />
           </button>
         </div>
@@ -43,7 +43,7 @@ export default function Sidebar() {
           finalPrice > 0 && (
             <div className='flex items-center justify-between mt-4'>
               <span className='font-bold'>$ {finalPrice.toFixed(2)}</span>
-              <button className='bg-red-500 p-3 hover:bg-red-400' onClick={clearCart}>
+              <button className='bg-red-500 p-3 hover:bg-red-400' onClick={clearCart} name='clearCartButton' role='button'>
                 <FiTrash2 className='text-white' />
               </button>
             </div>

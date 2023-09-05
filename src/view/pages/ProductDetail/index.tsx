@@ -70,6 +70,8 @@ export default function ProductDetail() {
           <button
             className='bg-slate-400 py-2 px-4 rounded text-lg hover:bg-slate-500 transition-all font-bold'
             onClick={handleAddCart}
+            name='AddItem'
+            role='button'
           >
             Add to cart
           </button>

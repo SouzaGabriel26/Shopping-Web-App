@@ -39,7 +39,7 @@ export default function Home() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-sm mx-auto md:max-w-none md-mx-0'>
           {
             filteredProducts && filteredProducts.map((product) => (
-              <Product product={product} key={product.id} />
+              <Product product={product} key={product.id} name={product.title} />
             ))
           }
           </div>

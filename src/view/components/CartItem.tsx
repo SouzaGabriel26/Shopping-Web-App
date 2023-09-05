@@ -16,7 +16,7 @@ export default function CartItem({ item } : CartItemProps) {
     <div className='flex flex-col'>
       <div className='w-full min-h-[150px] flex items-center gap-x-4'>
 
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${product.id}`} aria-label={`See more about ${item.product.title}`}>
           <img src={product.image} alt={product.title} className="max-w-[80px]" />
         </Link>
 
@@ -25,6 +25,7 @@ export default function CartItem({ item } : CartItemProps) {
             <Link
               to={`/product/${product.id}`}
               className='text-sm uppercase font-medium max-w-[240px] text-gray-800 hover:underline'
+              aria-label={`See more about ${item.product.title}`}
             >
               {product.title}
             </Link>
